@@ -1,0 +1,10 @@
+<h1>{{ game.game_title }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<ul>
+<li>game title = {{ game.game_title }}</li>
+<li>game description = {{ game.game_description }}</li>
+<li>image url = {{ game.image_url }}</li>
+<li>game url = {{ game.game_url }}</li>
+<li>publication date = {{ game.pub_date}}</li>
+</ul>
