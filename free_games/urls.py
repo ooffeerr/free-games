@@ -7,4 +7,5 @@ urlpatterns = patterns('',
     url(r'^$', views.IndexView.as_view(), name='index'),
     # ex: /free_games/<game_id>/detail
     url(r'^(?P<pk>\d+)/$', views.DetailView.as_view(), name='detail'),
+    url(r'^get_free_games/$', views.get_free_games, name='get_free_games'),
 )
